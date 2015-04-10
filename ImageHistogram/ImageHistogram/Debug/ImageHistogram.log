@@ -1,0 +1,22 @@
+﻿Build started 3/5/2015 11:14:04 AM.
+     1>Project "E:\Shashank\LearnC\ImageHistogram\ImageHistogram\ImageHistogram.vcxproj" on node 2 (Build target(s)).
+     1>AddCudaCompileDeps:
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\cl.exe /E /nologo /showIncludes /TP /D__CUDACC__ /DWIN32 /D_DEBUG /D_CONSOLE /D_MBCS /I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v6.5\include" /I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v6.5\bin" /I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v6.5\include" /I. /FIcuda_runtime.h /c E:\Shashank\LearnC\ImageHistogram\ImageHistogram\kernel.cu 
+       CudaBuild:
+         Compiling CUDA source file kernel.cu...
+         cmd.exe /C "C:\Users\sshivakumar\AppData\Local\Temp\tmp01d546283ce246658ee65641c5656e67.cmd"
+         "C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v6.5\bin\nvcc.exe" -gencode=arch=compute_20,code=\"sm_20,compute_20\" --use-local-env --cl-version 2012 -ccbin "C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin"  -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v6.5\include" -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v6.5\include"  -G   --keep-dir Debug -maxrregcount=0  --machine 32 --compile -cudart static  -g   -DWIN32 -D_DEBUG -D_CONSOLE -D_MBCS -Xcompiler "/EHsc /W3 /nologo /Od /Zi /RTC1 /MDd  " -o Debug\kernel.cu.obj "E:\Shashank\LearnC\ImageHistogram\ImageHistogram\kernel.cu"
+         
+         E:\Shashank\LearnC\ImageHistogram\ImageHistogram>"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v6.5\bin\nvcc.exe" -gencode=arch=compute_20,code=\"sm_20,compute_20\" --use-local-env --cl-version 2012 -ccbin "C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin"  -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v6.5\include" -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v6.5\include"  -G   --keep-dir Debug -maxrregcount=0  --machine 32 --compile -cudart static  -g   -DWIN32 -D_DEBUG -D_CONSOLE -D_MBCS -Xcompiler "/EHsc /W3 /nologo /Od /Zi /RTC1 /MDd  " -o Debug\kernel.cu.obj "E:\Shashank\LearnC\ImageHistogram\ImageHistogram\kernel.cu" 
+     1>E:/Shashank/LearnC/ImageHistogram/ImageHistogram/kernel.cu(213): warning : variable "imageWidth" is used before its value is set
+     1>E:/Shashank/LearnC/ImageHistogram/ImageHistogram/kernel.cu(213): warning : variable "imageHeight" is used before its value is set
+     1>E:/Shashank/LearnC/ImageHistogram/ImageHistogram/kernel.cu(213): warning : variable "imageChannels" is used before its value is set
+     1>E:/Shashank/LearnC/ImageHistogram/ImageHistogram/kernel.cu(239): warning : variable "hostOutputImageData" is used before its value is set
+     1>e:\shashank\learnc\imagehistogram\imagehistogram\readPPM.h(15): error : function "readPPM" was referenced but not defined
+         kernel.cu
+     1>C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V110\BuildCustomizations\CUDA 6.5.targets(593,9): error MSB3721: The command ""C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v6.5\bin\nvcc.exe" -gencode=arch=compute_20,code=\"sm_20,compute_20\" --use-local-env --cl-version 2012 -ccbin "C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin"  -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v6.5\include" -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v6.5\include"  -G   --keep-dir Debug -maxrregcount=0  --machine 32 --compile -cudart static  -g   -DWIN32 -D_DEBUG -D_CONSOLE -D_MBCS -Xcompiler "/EHsc /W3 /nologo /Od /Zi /RTC1 /MDd  " -o Debug\kernel.cu.obj "E:\Shashank\LearnC\ImageHistogram\ImageHistogram\kernel.cu"" exited with code 2.
+     1>Done Building Project "E:\Shashank\LearnC\ImageHistogram\ImageHistogram\ImageHistogram.vcxproj" (Build target(s)) -- FAILED.
+
+Build FAILED.
+
+Time Elapsed 00:00:01.94
